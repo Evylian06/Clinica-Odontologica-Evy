@@ -17,23 +17,27 @@ const features = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
-      <header className="border-b border-[var(--border)] bg-white/90 backdrop-blur-md">
+    <main className="min-h-screen bg-(--background) text-(--foreground)">
+      <header className="border-b border-(--border) bg-white/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
-          <div className="flex items-center gap-4">
-            <div className="h-11 w-11 rounded-2xl bg-[var(--primary)] shadow-lg shadow-[rgba(59,130,246,0.18)]" />
-            <div>
-              <p className="text-xs uppercase tracking-[0.35em] text-[#475569]">Eldent</p>
-              <p className="text-sm font-semibold text-[#1F2937]">Solución dental</p>
+            <div className="flex items-center gap-4">
+              <img
+                src="/logo1.png"
+                alt="Logo de la clínica"
+                className="h-11 w-11 rounded-2xl object-contain bg-transparent"
+              />
+              <div>
+                <p className="text-xs uppercase tracking-[0.35em] text-[#475569]">Eldent</p>
+                <p className="text-sm font-semibold text-[#1F2937]">Solución dental</p>
+              </div>
             </div>
-          </div>
           <nav className="flex items-center gap-6 text-sm font-semibold text-[#1F2937]">
-            <Link href="/login" className="transition hover:text-[var(--primary)]">
+            <Link href="/login" className="transition hover:text-(--primary)">
               Iniciar sesión
             </Link>
             <Link
               href="/register"
-              className="rounded-full bg-[var(--primary)] px-5 py-3 text-white transition hover:bg-[var(--primary-soft)]"
+              className="rounded-full bg-(--primary) px-5 py-3 text-white transition hover:bg-(--primary-soft)"
             >
               Crear cuenta
             </Link>
@@ -54,19 +58,19 @@ export default function Home() {
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/register"
-                className="inline-flex items-center justify-center rounded-full bg-[var(--primary)] px-8 py-4 text-sm font-black text-white transition hover:bg-[var(--primary-soft)]"
+                className="inline-flex items-center justify-center rounded-full bg-(--primary) px-8 py-4 text-sm font-black text-white transition hover:bg-(--primary-soft)"
               >
                 Crear cuenta
               </Link>
               <Link
                 href="/login"
-                className="inline-flex items-center justify-center rounded-full border border-[var(--border)] px-8 py-4 text-sm font-semibold text-[#1F2937] transition hover:border-[#60A5FA]"
+                className="inline-flex items-center justify-center rounded-full border border-(--border) px-8 py-4 text-sm font-semibold text-[#1F2937] transition hover:border-[#60A5FA]"
               >
                 Iniciar sesión
               </Link>
             </div>
           </div>
-          <div className="rounded-4xl border border-[var(--border)] bg-white p-10 shadow-xl shadow-[rgba(59,130,246,0.15)]">
+          <div className="rounded-4xl border border-(--border) bg-white p-10 shadow-xl shadow-[rgba(59,130,246,0.15)]">
             <div className="space-y-6">
               <p className="text-sm uppercase tracking-[0.35em] text-[#94a3b8]">Listo para tu clínica</p>
               <div className="space-y-4">
@@ -89,7 +93,7 @@ export default function Home() {
           {features.map((feature) => (
             <article
               key={feature.title}
-              className="rounded-[1.75rem] border border-[var(--border)] bg-white p-8 shadow-lg shadow-[rgba(59,130,246,0.12)]"
+              className="rounded-[1.75rem] border border-(--border) bg-white p-8 shadow-lg shadow-[rgba(59,130,246,0.12)]"
             >
               <h3 className="text-xl font-bold text-[#1F2937]">{feature.title}</h3>
               <p className="mt-4 text-[#475569]">{feature.description}</p>

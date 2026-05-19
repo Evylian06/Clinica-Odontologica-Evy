@@ -5,8 +5,8 @@ export const metadata: Metadata = {
   title: "Clínica Odontológica Eldent",
   description: "Solución profesional de gestión integral para clínicas dentales.",
   icons: {
-    icon: "/favicon.svg",
-    apple: "/favicon.svg",
+    icon: "/logo1.png",
+    apple: "/logo1.png",
   },
 };
 
