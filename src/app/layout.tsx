@@ -18,6 +18,8 @@ export default function RootLayout({
   return (
     <html lang="es" className="h-full antialiased" suppressHydrationWarning>
       <head>
+        <link rel="icon" href="/logo1.png" sizes="any" />
+        <link rel="apple-touch-icon" href="/logo1.png" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
